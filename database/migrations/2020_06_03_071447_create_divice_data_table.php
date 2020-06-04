@@ -15,6 +15,11 @@ class CreateDiviceDataTable extends Migration
     {
         Schema::create('divice_data', function (Blueprint $table) {
             $table->id();
+            $table->string('DevID');
+            $table->string('distance')->nullable();
+            $table->string('gas1');
+            $table->string('gas2');
+            $table->string('gas3');
             $table->timestamps();
         });
     }
