@@ -17,7 +17,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <meta name="description" content="">
  <meta name="keywords" content="html5, template, website, responsive, bootstrap">
- <meta name="author" content="neuethemes">
+ <meta name="author" content="bazimya">
 
  <!-- Favicon -->
  <link rel="icon" href="" sizes="32x32"/>
@@ -256,7 +256,7 @@
 
             <!-- Footer -->
             <footer class="bg-white w-100 pl-5 pr-5 pt-4 pb-4 mt-auto">
-              <div>Neuethemes © 2018</div>
+              <div>Beno Holding © 2020</div>
             </footer>
             <!-- /Footer -->
 
