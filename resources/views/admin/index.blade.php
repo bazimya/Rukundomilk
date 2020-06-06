@@ -133,10 +133,10 @@
           <div class="widget-block">
 
             {{-- <header> --}}
-              <h3 class="widget-title">Lever of </h3>
+              <h3 class="widget-title">Charts Of Gas Distance  </h3>
               <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Throug this charts You can see The  data Using The Graphs
+                <br>It follows the previose
               </p>
             {{-- <div class="service-icons"><button data-toggle="modal" class="btn btn-icon-sm rounded-circle btn-transparent" data-target="#sourceCodeModal"><i class="fa fa-code" aria-hidden="true"></i></button></div></header> --}}
 
@@ -152,7 +152,7 @@
                         labels: ['Gaz1', 'Gaz2', 'Gaz3', 'Distance'],
                         datasets: [{
                           backgroundColor: '#27A9E0',
-                          data: [ 66, 22, 25, 100]
+                          data: [{!! $allinfom->Gaz1 !!} ,{!! $allinfom->Gaz2 !!},{!! $allinfom->Gaz3 !!},{!! $allinfom->distance !!}]
                         }]
                       },
                       options: {
