@@ -31,14 +31,14 @@
             }
         });
 
-        // if (window.toastr !== undefined) {
-        //   toastr.options = {
-        //     "closeButton": true,
-        //     "progressBar": true,
-        //     "positionClass": "toast-bottom-right",
-        //   };
-        //   toastr["info"]("Non-blocking notifications available!", "Info");
-        // }
+        if (window.toastr !== undefined) {
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-bottom-right",
+            };
+            toastr["info"](" This Template were created By Yanjye ltd In partaner with Beno holdings", "Bazimya");
+        }
 
     });
 
