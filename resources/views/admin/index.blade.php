@@ -194,7 +194,13 @@
 
 
   </div>
-
+  <script>
+    window.onload = function() {
+        setTimeout(function () {
+            location.reload()
+        }, 20000);
+     };
+</script>
 @endsection
 
 
