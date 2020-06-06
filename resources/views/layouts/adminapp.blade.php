@@ -52,9 +52,9 @@
                 <a href="index.html">
                   <div class="text-center text-nowrap">
                     <i class="fa fa-spin fa-play-circle rounded-circle" aria-hidden="true"></i>
-                    <h6 class="logo-title text-uppercase mt-3">OpenAdmin</h6>
+                    <h6 class="logo-title text-uppercase mt-3">Beno Holding</h6>
                     <p class="text-muted">
-                      <small>ver. 1.0.0</small>
+                      <small></small>
                     </p>
                   </div>
                 </a>
@@ -63,7 +63,7 @@
 
               <!-- Logo mobile -->
               <div class="logo-mobile pt-4 pb-4 w-100">
-                <a href="index.html">
+                <a href="/">
                   <div class="text-center text-nowrap">
                     <i class="fa fa-spin fa-play-circle rounded-circle" aria-hidden="true"></i>
                   </div>
@@ -94,11 +94,7 @@
 
             <!-- Top Toolbar -->
             <div class="navbar navbar-light bg-white px-3 px-sm-5 py-3">
-              <div class="d-inline-block mr-3">
-                <a href="#" data-target="#sidebar-left" data-toggle="collapse-width" class="btn btn-dark btn-icon rounded-circle">
-                  <i class="fa fa-navicon"></i>
-                </a>
-              </div>
+
 
               <form class="search-form form-inline my-2 my-lg-0">
                 <div class="input-group input-group-built-in">
@@ -113,7 +109,7 @@
 
               <ul class="nav ml-auto">
 
-                <li class="m-sm-1 m-md-2">
+                {{-- <li class="m-sm-1 m-md-2">
                   <a data-toggle="dropdown" class="btn btn-light btn-icon rounded-circle position-relative" href="#" aria-expanded="false">
                     <i class="fa fa-bell" aria-hidden="true"></i>
                     <span class="badge badge-hint badge-primary">8</span>
@@ -155,17 +151,17 @@
                     </div>
 
                   </div>
-                </li>
+                </li> --}}
 
-                <li class="m-sm-1 m-md-2">
+                {{-- <li class="m-sm-1 m-md-2">
                   <a data-toggle="dropdown" class="btn btn-light btn-icon rounded-circle position-relative" href="#" aria-expanded="false">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                     <span class="badge badge-hint badge-success">16</span>
-                  </a>
+                  </a> --}}
 
-                  <div class="dropdown-menu dropdown-menu-right">
+                  {{-- <div class="dropdown-menu dropdown-menu-right"> --}}
 
-                    <ul class="list-unstyled">
+                    {{-- <ul class="list-unstyled">
                       <li class="media border-bottom-1 border-light p-4">
                         <img src="assets/custom/1.0.0/images/02.jpg" height="44px" class="rounded-circle d-flex mr-3" alt="Martin Schultze">
                         <div class="media-body">
@@ -199,33 +195,33 @@
                           <small class="text-muted d-block">Henry Jane at 2:30 am 11.06.2014</small>
                         </div>
                       </li>
-                    </ul>
+                    </ul> --}}
 
-                    <div class="media d-flex pl-4 pr-4 pt-3 pb-3">
+                    {{-- <div class="media d-flex pl-4 pr-4 pt-3 pb-3">
                       <a href="#!">Read all Messages</a>
-                    </div>
+                    </div> --}}
 
-                  </div>
+                  {{-- </div> --}}
 
-                </li>
+                {{-- </li> --}}
 
-                <li class="m-sm-1 m-md-2">
+                {{-- <li class="m-sm-1 m-md-2">
                   <a data-toggle="slide-right" data-target="#sidebar-right" class="btn btn-light btn-icon rounded-circle" href="#">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </a>
-                </li>
+                </li> --}}
 
                 <li class="m-sm-1 m-md-2">
                   <a data-toggle="dropdown" href="#" aria-expanded="false">
                     <div class="d-inline-block mr-2">
-                      <img src="assets/custom/1.0.0/images/03.jpg" class="rounded-circle" height="32px">
+                      {{-- <img src="assets/custom/1.0.0/images/03.jpg" class="rounded-circle" height="32px"> --}}
                     </div>
                     <div class="d-none d-lg-inline-block">
-                      <span class="d-block">John Brown</span>
+                      <span class="d-block">bazimya</span>
                     </div>
                   </a>
 
-                  <div class="dropdown-menu dropdown-menu-right">
+                  {{-- <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item" href="profile.html">
                       <i class="fa fa-user-circle-o" aria-hidden="true"></i> Profile
                     </a>
@@ -239,7 +235,7 @@
                     <a class="dropdown-item" href="login.html">
                       <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
                     </a>
-                  </div>
+                  </div> --}}
 
                 </li>
 
