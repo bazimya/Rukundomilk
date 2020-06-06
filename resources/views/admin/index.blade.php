@@ -152,7 +152,7 @@
                         labels: ['Gaz1', 'Gaz2', 'Gaz3', 'Distance'],
                         datasets: [{
                           backgroundColor: '#27A9E0',
-                          data: [{!! $allinfom->Gaz1 !!} ,{!! $allinfom->Gaz2 !!},{!! $allinfom->Gaz3 !!},{!! $allinfom->distance !!}]
+                          data: [{!! $allinfom->gas1 !!} ,{!! $allinfom->gas2 !!},{!! $allinfom->gas3 !!},{!! $allinfom->distance !!}]
                         }]
                       },
                       options: {
