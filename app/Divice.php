@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class DiviceData extends Model
+class Divice extends Model
 {
-    //
+    protected $fillable =['divices'];
 }
