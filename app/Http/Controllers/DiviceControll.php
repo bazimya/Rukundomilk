@@ -19,15 +19,16 @@ class DiviceControll extends Controller
         $gas3=$request->gas3;
         $date=date("Y/m/d");
 
-    	$card->DevID = $DevID;
+
+
+        if (!empty($DevID)) {
+        $card->DevID = $DevID;
 		$card->distance = $distance;
 		$card->gas1 = $gas1;
         $card->gas2 = $gas2;
         $card->gas3 = $gas3;
 		$card->date = $date;
 		$card->save();
-
-        if (!empty($DevID)) {
             return response($card)->header('Content-Type', 'text/plain');
         }
        else{
