@@ -35,5 +35,13 @@ class DiviceControll extends Controller
             return response('There is Error In the Divice')->header('Content-Type', 'text/plain');
         }
     }
+    public function welcome(){
+        $date=date("Y/m/d");
+        $allinfom =Divice::where('date', '=', $date)->get()->last();
+
+
+        return view('admin/index',compact('allinfom'));
+
+    }
 
 }
