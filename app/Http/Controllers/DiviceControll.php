@@ -18,7 +18,6 @@ class DiviceControll extends Controller
         $gas2=$request->input('gas2');
         $gas3=$request->input('gas3');
         $date=date("Y/m/d");
-dd($DevID);
 
         if (!empty($DevID)) {
         $card->DevID = $DevID;

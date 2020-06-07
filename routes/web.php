@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 Route::get('/', 'DiviceControll@welcome');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/home', 'HomeController@index')->name('home');
