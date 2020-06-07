@@ -12,12 +12,14 @@ class DiviceControll extends Controller
 
 
         $card=new Divice();
-        $DevID=$request->input('DevID');
-        $distance=$request->input('distance');
-        $gas1=$request->input('gas1');
-        $gas2=$request->input('gas2');
-        $gas3=$request->input('gas3');
-        $date=date("Y/m/d");
+        $data = $request->json()->all();
+        $DevID = $data['DevID'];
+        $distance = $data['distance'];
+        $gas1 = $data['gas1'];
+        $gas2 = $data['gas2'];
+        $gas3 = $data['gas3'];
+        $date = date('y/m/d');
+
 
         if (!empty($DevID)) {
         $card->DevID = $DevID;
