@@ -9,36 +9,25 @@ use Illuminate\Http\Request;
 class DiviceControll extends Controller
 {
    public function DiviceData($deviceId,$distance, $gas1, $gas2, $gas3){
-    var_dump($distance);
-    die();
-        // $card=new Divice();
-        // $infoo = $request->json()->all();
 
-        //  var_dump($_post);
-        // die;
-        // $distance = $data['distance'];
-        // $gas1 = $data['gas1'];
-        // $gas2 = $data['gas2'];
-        // $gas3 = $data['gas3'];
-        // $date = date('y/m/d');
+        $card=new Divice();
 
-        // dd($infoo);
-        // if (!empty($infoo)) {
-        // $card->DevID = $infoo;
-
-		// // $card->distance = $distance;
-		// // $card->gas1 = $gas1;
-        // // $card->gas2 = $gas2;
-        // // $card->gas3 = $gas3;
-		// $card->date = $date;
-		// $card->save();
-    //         return response($card)->header('Content-Type', 'text/plain');
-    //     }
-    //    else{
+     $date = date("Y/m/d");
+        if (!empty($deviceId)) {
+        $card->DevID = $deviceId;
+		$card->distance = $distance;
+		$card->gas1 = $gas1;
+        $card->gas2 = $gas2;
+        $card->gas3 = $gas3;
+		$card->date = $date;
+		$card->save();
+          return response($card)->header('Content-Type', 'text/plain');
+         }
+       else{
 
             return response('There is Error In the Divice')->header('Content-Type', 'text/plain');
         }
-
+    }
     public function welcome(){
         $date=date("Y/m/d");
         $allinfom =Divice::where('date', '=', $date)->get()->last();
