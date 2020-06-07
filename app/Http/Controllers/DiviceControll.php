@@ -12,7 +12,7 @@ class DiviceControll extends Controller
 
 
         $card=new Divice();
-        $data = $request->json()->all();
+        $infoo = $request->json()->all();
 
         // var_dump($data);
         // die;
@@ -22,10 +22,10 @@ class DiviceControll extends Controller
         // $gas3 = $data['gas3'];
         $date = date('y/m/d');
 
+        dd($infoo);
+        if (!empty($infoo)) {
+        $card->DevID = $infoo;
 
-        if (!empty($data)) {
-        $card->DevID = $data;
-        dd($card);
 		// $card->distance = $distance;
 		// $card->gas1 = $gas1;
         // $card->gas2 = $gas2;
