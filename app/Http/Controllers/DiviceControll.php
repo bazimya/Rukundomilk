@@ -14,7 +14,7 @@ class DiviceControll extends Controller
         $card=new Divice();
         $infoo = $request->json()->all();
 
-        // var_dump($data);
+         var_dump($_GET);
         // die;
         // $distance = $data['distance'];
         // $gas1 = $data['gas1'];
