@@ -12,14 +12,13 @@ class DiviceControll extends Controller
 
 
         $card=new Divice();
-        $DevID=$request->DevID;
-        $distance=$request->distance;
-        $gas1=$request->gas1;
-        $gas2=$request->gas2;
-        $gas3=$request->gas3;
+        $DevID=$request->input('DevID');
+        $distance=$request->input('distance');
+        $gas1=$request->input('gas1');
+        $gas2=$request->input('gas2');
+        $gas3=$request->input('gas3');
         $date=date("Y/m/d");
-
-
+dd($DevID);
 
         if (!empty($DevID)) {
         $card->DevID = $DevID;
@@ -39,9 +38,16 @@ class DiviceControll extends Controller
     public function welcome(){
         $date=date("Y/m/d");
         $allinfom =Divice::where('date', '=', $date)->get()->last();
+        if (!empty($allinfom)) {
+            return view('admin/index',compact('allinfom'));
+        }else{
+            $allinfom =Divice::all()->last();
+
+            return view('admin/index',compact('allinfom'));
+        }
 
 
-        return view('admin/index',compact('allinfom'));
+
 
     }
 
